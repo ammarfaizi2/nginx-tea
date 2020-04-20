@@ -3,8 +3,6 @@ sudo apt-get install -y geoip-database libgeoip-dev libatomic-ops-dev;
 ./configure \
 --prefix=/etc/nginx \
 --sbin-path=/usr/sbin/nginx \
---http-log-path=/var/log/nginx/access.log \
---error-log-path=/var/log/nginx/error.log \
 --user=root \
 --group=root \
 --builddir=$(pwd)/build \
