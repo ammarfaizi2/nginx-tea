@@ -1,0 +1,5 @@
+*-log
+/build
+/ext/pcre-8.43/
+/ext/zlib-1.2.11/
+/ext/openssl-1.1.1f
