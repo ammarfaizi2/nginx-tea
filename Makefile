@@ -14,10 +14,10 @@ modules:
 	$(MAKE) -f /home/ammarfaizi2/project/now/nginx-tea/build/Makefile modules
 
 upgrade:
-	/usr/local/nginx/sbin/nginx -t
+	/usr/sbin/nginx -t
 
-	kill -USR2 `cat /usr/local/nginx/logs/nginx.pid`
+	kill -USR2 `cat /etc/nginx/logs/nginx.pid`
 	sleep 1
-	test -f /usr/local/nginx/logs/nginx.pid.oldbin
+	test -f /etc/nginx/logs/nginx.pid.oldbin
 
-	kill -QUIT `cat /usr/local/nginx/logs/nginx.pid.oldbin`
+	kill -QUIT `cat /etc/nginx/logs/nginx.pid.oldbin`

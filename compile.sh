@@ -45,4 +45,4 @@ sudo apt-get install -y geoip-database libgeoip-dev libatomic-ops-dev;
 --with-libatomic \
 --with-openssl=$(pwd)/ext/openssl-1.1.1f
 
-sudo make install;
+sudo make install -j2;
