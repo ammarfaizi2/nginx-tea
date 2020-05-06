@@ -1,4 +1,4 @@
-sudo apt-get install -y geoip-database libgeoip-dev libatomic-ops-dev;
+sudo apt-get install -y libxml2-dev libxslt1-dev geoip-database libgeoip-dev libatomic-ops-dev;
 
 ./configure \
 --prefix=/etc/nginx \
