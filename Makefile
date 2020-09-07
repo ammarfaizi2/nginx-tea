@@ -2,16 +2,16 @@
 default:	build
 
 clean:
-	rm -rf Makefile /home/ammarfaizi2/project/now/nginx-tea/build
+	rm -rf Makefile /root/server/app/nginx-tea/build
 
 build:
-	$(MAKE) -f /home/ammarfaizi2/project/now/nginx-tea/build/Makefile
+	$(MAKE) -f /root/server/app/nginx-tea/build/Makefile
 
 install:
-	$(MAKE) -f /home/ammarfaizi2/project/now/nginx-tea/build/Makefile install
+	$(MAKE) -f /root/server/app/nginx-tea/build/Makefile install
 
 modules:
-	$(MAKE) -f /home/ammarfaizi2/project/now/nginx-tea/build/Makefile modules
+	$(MAKE) -f /root/server/app/nginx-tea/build/Makefile modules
 
 upgrade:
 	/usr/sbin/nginx -t
